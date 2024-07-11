@@ -11,12 +11,12 @@
             "version": "3.0.59",
             "source": {
                 "type": "git",
-                "url": "https://github.com/caouecs/Laravel-lang.git",
+                "url": "https://github.com/Laravel-Lang/lang.git",
                 "reference": "c74446c1253e2a48541cb6cc5d9e2ea008f16634"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/c74446c1253e2a48541cb6cc5d9e2ea008f16634",
+                "url": "https://github.com/Laravel-Lang/lang/zipball/c74446c1253e2a48541cb6cc5d9e2ea008f16634",
                 "reference": "c74446c1253e2a48541cb6cc5d9e2ea008f16634",
                 "shasum": "",
                 "mirrors": [
