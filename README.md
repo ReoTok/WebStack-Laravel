@@ -81,11 +81,42 @@ $ php artisan serve
 
 ## 其他
 
-本应用预设了一些站点数据，可以使用以下命令清除：
+1. 本应用预设了一些站点数据，可以使用以下命令清除：
 
 ```shell
 $ php artisan webstack:clean
 ```
+
+2. 修改管理员admin密码请使用命令：
+   
+   ```shell
+   $ 首先进入对应的网站根目录 cd /your website-root-dir
+   $ php artisan admin:reset-password
+       Please enter a username who needs to reset his password: 
+        >
+   $ 输入 admin 回车
+   $ 然后输入密码。
+   ```
+
+3. 如果有需要隐藏后台 /admin 管理入口请修改此处：
+   
+   ```shell
+   $ 修改文件 /wwwroot/config/admin.php
+   $ 第49行
+       'route' => [
+   
+           'prefix' => 'admin',
+   
+           'namespace' => 'App\\Admin\\Controllers',
+   
+           'middleware' => ['web', 'admin'],
+       ],
+   $ 只修改 prefix 的值为你喜欢的，比如 your-text, 然后保存；
+   $ 重新刷新访问后台http://your-domain/your-text ,
+   $ Enjoy!
+   ```
+
+
 
 ## 感谢
 
