@@ -116,11 +116,9 @@ $ php artisan webstack:clean
    $ Enjoy!
    ```
 
-4.  站点title修改在根目录.env文件处第一行 APP_NAME=你的站点名称
+4. 站点title修改在根目录.env文件处第一行 APP_NAME=你的站点名称
 
-5. Header信息修改在 Directory: *root/resources/views/layouts/header.blade.php*
-   
-   
+5. Header信息修改在  /webroot/resources/views/layouts/header.blade.php
 
 ## 感谢
 
